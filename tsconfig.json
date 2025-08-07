@@ -25,9 +25,7 @@
     // "noPropertyAccessFromIndexSignature": true,
 
     "strict": true,
-    "verbatimModuleSyntax": false,
     "isolatedModules": true,
-    "noUncheckedSideEffectImports": true,
     "moduleDetection": "force",
     "skipLibCheck": true,
     "esModuleInterop": true,
