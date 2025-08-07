@@ -34,7 +34,7 @@
  *         name: font
  *         schema:
  *           type: string
- *           enum: [sans-serif, serif, monospace, Arial, Roboto, Verdana, 'Courier New', 'Times New Roman', Georgia]
+ *           enum: [sans-serif, serif, urbanist, slab]
  *         required: false
  *         description: Fallback text font
  *     responses:
