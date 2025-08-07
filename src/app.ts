@@ -9,8 +9,8 @@ const app = express();
 app.use(express.json());
 
 // Routes
+app.use('/', (req, res) => res.send('AVATARING'));
 app.use('/docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
-
 app.use('/api', routes);
 
 // Global error handler (should be after routes)
