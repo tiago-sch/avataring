@@ -1,8 +1,21 @@
 import { createCanvas, registerFont } from 'canvas';
+import path from 'path';
+import fs from 'fs';
 
-registerFont('src/fonts/Roboto-VariableFont_wdth,wght.ttf', {
-  family: 'Roboto',
+const FONTS: [string, string][] = [
+  ['Roboto', 'Roboto-VariableFont_wdth,wght.ttf'],
+  ['Roboto Serif', 'RobotoSerif-VariableFont_GRAD,opsz,wdth,wght.ttf'],
+  ['Roboto Slab', 'RobotoSlab-VariableFont_wght.ttf'],
+  ['Urbanist', 'Urbanist-VariableFont_wght.ttf'],
+];
+
+FONTS.forEach(([fontName, fontFile]) => {
+  const fontPath = path.resolve(__dirname, '../fonts/', fontFile);
+  if (fs.existsSync(fontPath)) {
+    registerFont(fontPath, { family: fontName });
+  }
 });
+
 registerFont('src/fonts/RobotoSerif-VariableFont_GRAD,opsz,wdth,wght.ttf', {
   family: 'Roboto Serif',
 });
