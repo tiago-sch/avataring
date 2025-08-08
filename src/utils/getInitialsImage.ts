@@ -1,15 +1,15 @@
 import { createCanvas, registerFont } from 'canvas';
 
-registerFont('./src/fonts/Roboto-VariableFont_wdth,wght.ttf', {
+registerFont('src/fonts/Roboto-VariableFont_wdth,wght.ttf', {
   family: 'Roboto',
 });
-registerFont('./src/fonts/RobotoSerif-VariableFont_GRAD,opsz,wdth,wght.ttf', {
+registerFont('src/fonts/RobotoSerif-VariableFont_GRAD,opsz,wdth,wght.ttf', {
   family: 'Roboto Serif',
 });
-registerFont('./src/fonts/RobotoSlab-VariableFont_wght.ttf', {
+registerFont('src/fonts/RobotoSlab-VariableFont_wght.ttf', {
   family: 'Roboto Slab',
 });
-registerFont('./src/fonts/Urbanist-VariableFont_wght.ttf', {
+registerFont('src/fonts/Urbanist-VariableFont_wght.ttf', {
   family: 'Urbanist',
 });
 
